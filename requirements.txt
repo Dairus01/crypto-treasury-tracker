@@ -1,0 +1,8 @@
+streamlit
+requests
+pandas
+plotly
+pycoingecko
+python-dotenv
+streamlit-aggrid
+streamlit-option-menu
