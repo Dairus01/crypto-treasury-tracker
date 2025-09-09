@@ -1,8 +1,8 @@
-# 💰 Crypto Treasury Tracker
+#  Crypto Treasury Tracker
 
 A comprehensive web application that tracks Bitcoin and Ethereum holdings of public companies with real-time PnL analysis, built with Streamlit and powered by CoinGecko API.
 
-## 🚀 Features
+##  Features
 
 ### Core Functionality
 - **Real-time Data**: Live treasury holdings data from CoinGecko API
@@ -33,14 +33,13 @@ A comprehensive web application that tracks Bitcoin and Ethereum holdings of pub
 ## 📋 Prerequisites
 
 - Python 3.8 or higher
-- CoinGecko API key (free tier available)
 - Internet connection for real-time data
 
 ## 🚀 Installation
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Dairus01/crypto-treasury-tracker
    cd crypto-treasury-tracker
    ```
 
@@ -49,20 +48,6 @@ A comprehensive web application that tracks Bitcoin and Ethereum holdings of pub
    pip install -r requirements.txt
    ```
 
-3. **Set up environment variables**
-   ```bash
-   # Copy the example environment file
-   cp env.example .env
-   
-   # Edit .env and add your CoinGecko API key
-   COINGECKO_API_KEY=your_actual_api_key_here
-   ```
-
-4. **Get your CoinGecko API key**
-   - Visit [CoinGecko API](https://www.coingecko.com/en/api)
-   - Sign up for a free account
-   - Generate your API key
-   - Add it to your `.env` file
 
 ## 🎯 Usage
 
@@ -91,20 +76,6 @@ A comprehensive web application that tracks Bitcoin and Ethereum holdings of pub
 - **Real-time Pricing**: Current market values and exchange rates
 - **Public Disclosures**: Company-reported crypto treasury positions
 
-## 🔧 Configuration
-
-### Environment Variables
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `COINGECKO_API_KEY` | Your CoinGecko API key | Required |
-| `DEBUG` | Enable debug mode | false |
-
-### API Rate Limits
-
-- **Free Tier**: 50 calls/minute, 10,000 calls/month
-- **Pro Tier**: Higher limits available for commercial use
-- **Caching**: Built-in caching reduces API calls
 
 ## 📈 Features in Detail
 
@@ -117,11 +88,6 @@ A comprehensive web application that tracks Bitcoin and Ethereum holdings of pub
 - Unrealized PnL (profit/loss)
 - PnL percentage
 
-### What-If Analysis
-- Adjust BTC and ETH prices
-- Real-time recalculation of values
-- Impact on total portfolio PnL
-- Scenario planning for different market conditions
 
 ### Visual Analytics
 - **Bar Charts**: Top companies by holdings
@@ -141,23 +107,6 @@ streamlit run app.py
 2. Connect repository to Streamlit Cloud
 3. Deploy automatically
 
-### Docker Deployment
-```dockerfile
-FROM python:3.9-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-COPY . .
-EXPOSE 8501
-CMD ["streamlit", "run", "app.py", "--server.port=8501"]
-```
-
-## 🔒 Security Considerations
-
-- API keys stored in environment variables
-- No sensitive data logged
-- HTTPS recommended for production
-- Rate limiting to prevent API abuse
 
 ## 📊 Performance Optimization
 
@@ -206,7 +155,7 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501"]
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License 
 
 ## ⚠️ Disclaimer
 
@@ -228,3 +177,4 @@ This application is for educational and informational purposes only. The data pr
 ---
 
 **Built with ❤️ for the crypto community**
+
